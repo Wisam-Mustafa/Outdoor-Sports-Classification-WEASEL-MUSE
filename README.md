@@ -30,6 +30,7 @@ The core of this project is the **MUSE** algorithm. Unlike standard classifiers,
 3.  **Classification:** Learns a logistic regression classifier on the histogram of these "words".
 
 ![Algorithm Concept](Fig_1.png)
+<br>
 *(Figure 1: Visualization of generated words and their frequency for different activity classes)*
 
 ---
@@ -41,6 +42,7 @@ We performed a **Signal Length Analysis** using the **TEASER** algorithm to find
 *   **Result:** The model reached **93% accuracy** with 55-second signals.
 
 ![Signal Optimization](Fig_3.png)
+<br>
 *(Figure 3: Classification accuracy vs. Signal Length. Demonstrating rapid convergence).*
 
 ---
@@ -52,18 +54,21 @@ The model demonstrated high integrity and robustness, particularly distinguishin
 The weighted average F1-Score reached **0.93**, with high precision across most categories.
 
 ![Classification Report](Table_1.png)
+<br>
 *(Table I: MUSE Classification Report)*
 
 ### 2. Confusion Matrix
 The matrix reveals that the model effectively separated distinct activities. The primary challenge was distinguishing between *Skiing* and *Roller-Skiing* due to their kinematic similarities.
 
 ![Confusion Matrix](Table_2.png)
+<br>
 *(Table II: Confusion Matrix. Note the high diagonal values indicating correct predictions)*
 
 ### 3. ROC-AUC Analysis
 To further validate the model, we conducted a Receiver Operating Characteristic (ROC) analysis. The Area Under Curve (AUC) scores were exceptional (near 1.00 for Biking).
 
 ![ROC Curves](Fig_2.png)
+<br>
 *(Figure 2: One-vs-rest ROC curves for the five categories)*
 
 ---
